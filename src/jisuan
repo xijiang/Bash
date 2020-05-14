@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [ $# -eq 2 ]
+then
+    echo "scale=$1; $2"|bc
+else
+    echo "scale=4; $1"|bc
+fi
